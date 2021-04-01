@@ -17,11 +17,14 @@ const elements = {
     "storyList": ".ant-select-item",
     "storyPH": ".ant-select-selection-placeholder",
     "imageLabel": ".ant-form-item-label",
+    "imageThumbnail": ".ant-upload-list-item-thumbnail",
     "image": "span.ant-upload",
     "submit": ".ant-btn",
     "tryAgainBtn": ".btn-primary",
     "error": "div[role=alert]",
-    "outside": "#root"
+    "outside": "#root",
+    "imageUpload": ".ant-upload input",
+    "binIcon": ".ant-upload-list-item-actions",
 }
 
 module.exports = elements;

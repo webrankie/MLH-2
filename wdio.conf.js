@@ -18,8 +18,9 @@ exports.config = {
     //
     specs: [
         //'./test/smoke/*.js',
-        './test/extended/age.js',
+        //'./test/extended/age.js',
         //'./test/extended/*.js'
+        './test/extended/image.js',
     ],
     // Patterns to exclude.
     exclude: [

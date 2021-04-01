@@ -21,6 +21,9 @@ const expResults = {
     "imagePH": "Click or drag and drop",
     "submitLabel": "Create!",
     "nameError": "70 symbols max",
+    "imagePlaceholder": "Click or drag and drop",
+    "imageThumbnail": "Click or drag and drop",
+
 }
 
 module.exports = expResults;
