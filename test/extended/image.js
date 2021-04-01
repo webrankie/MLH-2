@@ -39,6 +39,40 @@ describe('Image', function () {
 
         });
 
+        it('TC-150 Click works for .png files', function () {
+            let fileUpload = $(sel.imageUpload);
+            let thumbnail = $(sel.imageThumbnail);
+
+            let filePath = path.join(__dirname, '../../data/images/2mb-png.png');
+            let remoteFilePath = browser.uploadFile(filePath);
+
+            browser.execute(
+                (el) => el.style.display = 'block',
+                fileUpload
+            );
+            fileUpload.waitForDisplayed();
+            fileUpload.setValue(remoteFilePath);
+            expect(thumbnail).toBeExisting();
+
+        });
+
+        it('TC-152 Max size .jpeg file is 3.9 Mb', function () {
+            let fileUpload = $(sel.imageUpload);
+            let thumbnail = $(sel.imageThumbnail);
+
+            let filePath = path.join(__dirname, '../../data/images/2mb-png.png');
+            let remoteFilePath = browser.uploadFile(filePath);
+
+            browser.execute(
+                (el) => el.style.display = 'block',
+                fileUpload
+            );
+            fileUpload.waitForDisplayed();
+            fileUpload.setValue(remoteFilePath);
+            expect(thumbnail).toBeExisting();
+
+        });
+
         it('TC-156 Bin icon appears', function () {
             let fileUpload = $(sel.imageUpload);
             let filePath = path.join(__dirname, '../../data/images/2mb-2.jpg');

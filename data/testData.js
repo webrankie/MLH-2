@@ -51,4 +51,10 @@ const imagePath = {
     "mbJPG": '../../data/image/2mb-2.jpg'
 }
 
-module.exports = {name, gender, age, story, imagePath}
+const generatedStory = {
+
+    "storyGenerated": "After a feast, two cats see a piece of cake and start fighting for it.\n" + name.default + ", who is " + age.default + " years old, sees this as an opportunity for gain and offers to help them. Our hero divides the cake into two parts but shakes her head saying they are unequal. She takes a bite of one piece and then the other, but still finds them unequal.\nShe continues doing so until there is no more cake left, leaving the poor little cats disappointed.",
+    "storyMoral": "Moral: When you quarrel amongst yourselves, someone else gains from it."
+
+}
+module.exports = {name, age, gender, story, generatedStory,};

@@ -1,5 +1,7 @@
 const elements = {
     "header": "h3",
+    "headerSecondP": "h3",
+    "storyTitle": "h4",
     "instruction": "p",
     "nameLabel": "label[for=name]",
     "name": "#name",
@@ -25,6 +27,8 @@ const elements = {
     "outside": "#root",
     "imageUpload": ".ant-upload input",
     "binIcon": ".ant-upload-list-item-actions",
+    "storySecondP": ".card-text",
+    "avatar": ".error__pic",
 }
 
 module.exports = elements;
