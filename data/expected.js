@@ -9,7 +9,6 @@ const expResults = {
     "sheLabel": "she",
     "itLabel": "it",
     "ageLabel": "3. How old is your Hero?",
-    "agePH": "Hero's age",
     "agePlaceholderName" : "Hero's age",
     "one": "1",
     "two": "2",
