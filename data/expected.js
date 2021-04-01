@@ -10,12 +10,17 @@ const expResults = {
     "itLabel": "it",
     "ageLabel": "3. How old is your Hero?",
     "agePH": "Hero's age",
-    "storyLabel": "4. Type of the story",
+    "agePlaceholderName" : "Hero's age",
+    "one": "1",
+    "two": "2",
+    "trimSpaces": "123789",
+    "ageError": "looks like unreal age",
+    "storyLabel": "4. What type of story would you like to read?",
     "storyPH": "Type of the story",
     "imageLabel": "5. Upload an image (optional)",
     "imagePH": "Click or drag and drop",
     "submitLabel": "Create!",
-    "nameError": "70 symbols max"
+    "nameError": "70 symbols max",
 }
 
 module.exports = expResults;

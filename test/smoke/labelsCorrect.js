@@ -57,7 +57,7 @@ describe('Labels are correct', function () {
         expect(field).toEqual(exp.imageLabel);
     });
 
-    it('TC-024 Submit button label = Create!', function () {
+    it('TC-025 Submit button label = Create!', function () {
         let button = $(sel.submit).getText();
         expect(button).toEqual(exp.submitLabel);
     });
