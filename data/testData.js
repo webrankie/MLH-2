@@ -48,7 +48,7 @@ const story = {
 }
 
 const imagePath = {
-    "mbJPG": '../../data/image/2mb-2.jpg'
+    "mb": `'__dirname,' '../../data/image/2mb-2.jpg'`,
 }
 
 const generatedStory = {
@@ -57,4 +57,4 @@ const generatedStory = {
     "storyMoral": "Moral: When you quarrel amongst yourselves, someone else gains from it."
 
 }
-module.exports = {name, age, gender, story, generatedStory,};
+module.exports = {name, age, gender, story, generatedStory,imagePath};

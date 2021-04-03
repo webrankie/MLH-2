@@ -18,7 +18,7 @@ exports.config = {
     //
     specs: [
         //'./test/smoke/*.js',
-        './test/extended/age.js',
+        //'./test/extended/age.js',
         //'./test/extended/*.js'
         './test/extended/image.js',
     ],
@@ -102,7 +102,7 @@ exports.config = {
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 120000,
+    connectionRetryTimeout: 100000,
     //
     // Default request retries count
     connectionRetryCount: 3,
