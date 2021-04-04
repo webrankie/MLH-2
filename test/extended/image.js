@@ -1,9 +1,6 @@
 import sel from '../../data/selectors';
-import {name, gender, age, story} from '../../data/testData';
-import inputValues4 from '../../helpers/methods'
 import exp from "../../data/expected";
 import * as path from "path";
-import imagePath from "../../data/testData";
 
 describe('Image', function () {
 
@@ -147,73 +144,73 @@ describe('Image', function () {
 
         it('TC-167 User cannot Upload 2Mb .mp4', function () {
             let fileUpload = $(sel.imageUpload);
-            let thumbnail = $(sel.imageThumbnail);
             let filePath = path.join(__dirname, '../../data/images/2mb-video.mp4');
             let remoteFilePath = browser.uploadFile(filePath);
             browser.execute((el) => el.style.display = 'block', fileUpload);
             fileUpload.waitForDisplayed();
             fileUpload.setValue(remoteFilePath);
-            expect(thumbnail).toBeExisting();
+            let thumbnail = $(sel.imageThumbnail).isDisplayed();
+            expect(thumbnail).toEqual(false);
 
         });
 
         it('TC-168 User cannot Upload 2Mb .bmp', function () {
             let fileUpload = $(sel.imageUpload);
-            let thumbnail = $(sel.imageThumbnail);
             let filePath = path.join(__dirname, '../../data/images/2mb-bmp.bmp');
             let remoteFilePath = browser.uploadFile(filePath);
             browser.execute((el) => el.style.display = 'block', fileUpload);
             fileUpload.waitForDisplayed();
             fileUpload.setValue(remoteFilePath);
-            expect(thumbnail).toBeExisting();
+            let thumbnail = $(sel.imageThumbnail).isDisplayed();
+            expect(thumbnail).toEqual(false);
 
         });
 
         it('TC-169 User cannot Upload 2Mb .ppt', function () {
             let fileUpload = $(sel.imageUpload);
-            let thumbnail = $(sel.imageThumbnail);
             let filePath = path.join(__dirname, '../../data/images/1mb.ppt');
             let remoteFilePath = browser.uploadFile(filePath);
             browser.execute((el) => el.style.display = 'block', fileUpload);
             fileUpload.waitForDisplayed();
             fileUpload.setValue(remoteFilePath);
-            expect(thumbnail).toBeExisting();
+            let thumbnail = $(sel.imageThumbnail).isDisplayed();
+            expect(thumbnail).toEqual(false);
 
         });
 
         it('TC-170 User cannot Upload 2Mb .psd', function () {
             let fileUpload = $(sel.imageUpload);
-            let thumbnail = $(sel.imageThumbnail);
             let filePath = path.join(__dirname, '../../data/images/2mb-psd.psd');
             let remoteFilePath = browser.uploadFile(filePath);
             browser.execute((el) => el.style.display = 'block', fileUpload);
             fileUpload.waitForDisplayed();
             fileUpload.setValue(remoteFilePath);
-            expect(thumbnail).toBeExisting();
+            let thumbnail = $(sel.imageThumbnail).isDisplayed();
+            expect(thumbnail).toEqual(false);
 
         });
 
         it('TC-171 User cannot Upload 2Mb .tif', function () {
             let fileUpload = $(sel.imageUpload);
-            let thumbnail = $(sel.imageThumbnail);
             let filePath = path.join(__dirname, '../../data/images/2mb-tif.tif');
             let remoteFilePath = browser.uploadFile(filePath);
             browser.execute((el) => el.style.display = 'block', fileUpload);
             fileUpload.waitForDisplayed();
             fileUpload.setValue(remoteFilePath);
-            expect(thumbnail).toBeExisting();
+            let thumbnail = $(sel.imageThumbnail).isDisplayed();
+            expect(thumbnail).toEqual(false);
 
         });
 
         it('TC-172 User cannot Upload 2Mb .raw', function () {
             let fileUpload = $(sel.imageUpload);
-            let thumbnail = $(sel.imageThumbnail);
             let filePath = path.join(__dirname, '../../data/images/2mb-raw copy.raw');
             let remoteFilePath = browser.uploadFile(filePath);
             browser.execute((el) => el.style.display = 'block', fileUpload);
             fileUpload.waitForDisplayed();
             fileUpload.setValue(remoteFilePath);
-            expect(thumbnail).toBeExisting();
+            let thumbnail = $(sel.imageThumbnail).isDisplayed();
+            expect(thumbnail).toEqual(false);
 
         });
     });
