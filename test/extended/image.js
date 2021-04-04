@@ -137,6 +137,7 @@ describe('Image', function () {
             let remoteFilePath = browser.uploadFile(filePath);
             browser.execute((el) => el.style.display = 'block', fileUpload);
             fileUpload.waitForDisplayed();
+            fileUpload.setValue(remoteFilePath);
             let thumbnail = $(sel.imageThumbnail).isDisplayed();
             expect(thumbnail).toEqual(false);
 
