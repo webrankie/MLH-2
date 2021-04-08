@@ -1,5 +1,5 @@
 const name = {
-    "default": "QueenBee",
+    "default": "QueenBee!1",
     "symbol1": "i",
     "symbol70": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
     "symbol71": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz1234567890123456789",
@@ -18,7 +18,6 @@ const gender = {
     "she": 1,
     "it": 2,
 }
-
 
 const age = {
     "default": "1234567890",
@@ -44,17 +43,42 @@ const story = {
     "journeyAndReturn": 3,
     "ragsAndRiches": 4,
     "tragedy": 5,
-    "comedy": 6
-}
-
-const imagePath = {
-    "mb": `'__dirname,' '../../data/image/2mb-2.jpg'`,
+    "comedy": 6,
 }
 
 const generatedStory = {
-
-    "storyGenerated": "After a feast, two cats see a piece of cake and start fighting for it.\n" + name.default + ", who is " + age.default + " years old, sees this as an opportunity for gain and offers to help them. Our hero divides the cake into two parts but shakes her head saying they are unequal. She takes a bite of one piece and then the other, but still finds them unequal.\nShe continues doing so until there is no more cake left, leaving the poor little cats disappointed.",
-    "storyMoral": "Moral: When you quarrel amongst yourselves, someone else gains from it."
-
+    "story": 0,
+    "moral": 1,
 }
-module.exports = {name, age, gender, story, generatedStory,imagePath};
+
+const image = {
+    "ppt2": '../../data/images/1mb.ppt',
+    "jpg2": '../../data/images/2mb-2.jpg',
+    "bmp2": '../../data/images/2mb-bmp.bmp',
+    "gif2": '../../data/images/2mb-gif.gif',
+    "pdf2": '../../data/images/2mb-pdf.pdf',
+    "png2": '../../data/images/2mb-png.png',
+    "psd2": '../../data/images/2mb-psd.psd',
+    "psd22": '../../data/images/2mb-psd-2.psd',
+    "raw2": '../../data/images/2mb-raw copy.raw',
+    "tif2": '../../data/images/2mb-tif.tif',
+    "mp4": '../../data/images/2mb-video.mp4',
+    "ppt": '../../data/images/3DThrust.ppt',
+    "jpg39": '../../data/images/39mb-jpeg.jpg',
+    "png39": '../../data/images/39mb-png.png',
+    "jpg40": '../../data/images/40mb-jpeg.jpg',
+    "png40": '../../data/images/40mb-png.png',
+    "jpg43": '../../data/images/43mb-jpeg.jpg',
+    "png43": '../../data/images/43mb-png.png',
+    "jpg45": '../../data/images/45mb-jpeg.jpg',
+}
+
+const submit = {
+    "yes": 1,
+}
+
+const reset = {
+    "yes": 1,
+}
+
+module.exports = {name, gender, age, story, generatedStory, image, submit, reset};

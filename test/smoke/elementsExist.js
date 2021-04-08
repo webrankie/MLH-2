@@ -1,5 +1,6 @@
 import sel from '../../data/selectors';
-import exp from '../../data/expected'
+import exp from '../../data/expected';
+import {gender} from '../../data/testData';
 
 describe('My Little Hero', function () { //define suite title by passing a string
 
@@ -44,32 +45,32 @@ describe('My Little Hero', function () { //define suite title by passing a strin
         });
 
         it('TC-007a Gender radio button "he" is present', function () {
-            let buttonHe = $$(sel.radioButtons)[0].isDisplayed();
+            let buttonHe = $$(sel.radioButtons)[gender.he].isDisplayed();
             expect(buttonHe).toEqual(true);
         });
 
         it('TC-007b Gender radio button "she" is present', function () {
-            let buttonShe = $$(sel.radioButtons)[1].isDisplayed();
+            let buttonShe = $$(sel.radioButtons)[gender.she].isDisplayed();
             expect(buttonShe).toEqual(true);
         });
 
         it('TC-007c Gender radio button "it" is present', function () {
-            let buttonIt = $$(sel.radioButtons)[2].isDisplayed();
+            let buttonIt = $$(sel.radioButtons)[gender.it].isDisplayed();
             expect(buttonIt).toEqual(true);
         });
 
         it('TC-007d Gender radio button label "he" is present', function () {
-            let labelHe = $$(sel.radioButtonsLabels)[0].isDisplayed();
+            let labelHe = $$(sel.radioButtonsLabels)[gender.he].isDisplayed();
             expect(labelHe).toEqual(true);
         });
 
         it('TC-007e Gender radio button label "she" is present', function () {
-            let labelShe = $$(sel.radioButtonsLabels)[1].isDisplayed();
+            let labelShe = $$(sel.radioButtonsLabels)[gender.she].isDisplayed();
             expect(labelShe).toEqual(true);
         });
 
         it('TC-007f Gender radio button label "it" is present', function () {
-            let labelIt = $$(sel.radioButtonsLabels)[2].isDisplayed();
+            let labelIt = $$(sel.radioButtonsLabels)[gender.it].isDisplayed();
             expect(labelIt).toEqual(true);
         });
 

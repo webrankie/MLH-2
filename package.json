@@ -14,7 +14,10 @@
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.12",
     "@babel/register": "^7.13.8",
-    "@wdio/cli": "^7.2.3"
+    "@wdio/cli": "^7.2.3",
+    "latest": "^0.2.0",
+    "n": "^7.1.0",
+    "stable": "^0.1.8"
   },
   "devDependencies": {
     "@wdio/dot-reporter": "^7.2.1",
